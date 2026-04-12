@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TRIEDGE Industrial Solutions - Engineering Excellence and Industrial Precision. Expert industrial consulting, engineering solutions, and maintenance support."
+    />
+    <meta
+      name="keywords"
+      content="Industrial Solutions, Engineering Services, Manufacturing, Industrial Consulting, Equipment Maintenance"
+    />
+    <meta name="author" content="TRIEDGE Industrial Solutions LLP" />
+    <title>TRIEDGE Industrial Solutions - Engineering Excellence</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ================= HOME PAGE PREMIUM ================= */
+
+      /* ===== HERO ===== */
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+      }
+
+      .hero-title {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .hero-subtitle {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #ccc;
+      }
+
+      .hero-buttons {
+        margin-top: 30px;
+      }
+
+      .hero-buttons .btn {
+        margin: 0 10px;
+      }
+
+      /* ===== SERVICES ===== */
+      .services-overview {
+        padding: 100px 0;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .service-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 14px;
+        text-align: center;
+        transition: 0.3s;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .service-icon {
+        font-size: 28px;
+        color: #ff7a00;
+        margin-bottom: 15px;
+      }
+
+      .services-cta {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      /* ===== ABOUT PREVIEW ===== */
+      .about-preview {
+        padding: 100px 0;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .about-image img {
+        width: 100%;
+        border-radius: 14px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .about-content h2 {
+        font-size: 34px;
+        margin-bottom: 15px;
+      }
+
+      .about-content p {
+        color: #aaa;
+        margin-bottom: 15px;
+      }
+
+      .about-list li {
+        margin-bottom: 10px;
+      }
+
+      .about-list i {
+        color: #ff7a00;
+        margin-right: 8px;
+      }
+
+      /* ===== WHY CHOOSE ===== */
+      .why-choose {
+        padding: 100px 0;
+      }
+
+      .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .reason-card {
+        background: rgba(255, 255, 255, 0.04);
+        padding: 30px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        position: relative;
+        transition: 0.3s;
+      }
+
+      .reason-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .reason-number {
+        font-size: 40px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+
+      /* ===== STATS ===== */
+      .statistics {
+        padding: 80px 0;
+        background: rgba(255, 122, 0, 0.05);
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        text-align: center;
+      }
+
+      .stat-card h3 {
+        font-size: 40px;
+        color: #ff7a00;
+      }
+
+      .stat-card p {
+        margin-top: 5px;
+        color: #aaa;
+      }
+
+      /* ===== CTA ===== */
+      .cta-section {
+        padding: 100px 0;
+        text-align: center;
+        background: linear-gradient(135deg, #ff7a00, #ff5500);
+        color: white;
+      }
+
+      .cta-section h2 {
+        font-size: 36px;
+      }
+
+      .cta-section p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .hero-title {
+          font-size: 32px;
+        }
+
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-cogs"></i>
+          <span>TRIEDGE</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="why-triedge.html" class="nav-link">Why Triedge</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background:
+          linear-gradient(rgba(15, 35, 70, 0.7), rgba(15, 35, 70, 0.7)),
+          url(&quot;https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Engineering Excellence. Industrial Precision.
+        </h1>
+        <p class="hero-subtitle">
+          Delivering reliable, efficient, and innovative industrial solutions to
+          optimize performance and enhance productivity.
+        </p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Core Services</h2>
+          <p>
+            Comprehensive industrial solutions designed to meet your unique
+            business needs
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Industrial Consulting</h3>
+            <p>
+              Expert guidance on process optimization, efficiency improvement,
+              and strategic industrial planning.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-drafting-compass"></i>
+            </div>
+            <h3>Engineering Solutions</h3>
+            <p>
+              Custom engineering designs and technical solutions tailored to
+              your specific industrial requirements.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>
+              Reliable equipment maintenance, troubleshooting, and ongoing
+              technical support services.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Automation Solutions</h3>
+            <p>
+              Industrial automation technologies to streamline operations and
+              reduce manual intervention.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Project Execution</h3>
+            <p>
+              End-to-end technical project management with timely delivery and
+              quality assurance.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-cog"></i>
+            </div>
+            <h3>Process Optimization</h3>
+            <p>
+              Streamline your industrial processes to maximize efficiency and
+              minimize operational costs.
+            </p>
+          </div>
+        </div>
+        <div class="services-cta">
+          <a href="services.html" class="btn btn-primary">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80"
+              alt="TRIEDGE Industrial Team"
+            />
+          </div>
+          <div class="about-content">
+            <h2>About TRIEDGE Industrial Solutions</h2>
+            <p>
+              With over a decade of industry expertise, TRIEDGE Industrial
+              Solutions has established itself as a trusted partner in
+              delivering comprehensive industrial and engineering solutions
+              across India.
+            </p>
+            <p>
+              Our team of skilled professionals combines technical excellence
+              with innovative thinking to provide customized solutions that
+              drive operational efficiency and business growth.
+            </p>
+            <ul class="about-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Expert team of engineers and
+                consultants
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Proven track record across
+                multiple industries
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Commitment to quality and
+                excellence
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Client-centric approach to
+                problem-solving
+              </li>
+            </ul>
+            <a href="about.html" class="btn btn-primary">Read Our Full Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose TRIEDGE?</h2>
+          <p>
+            Setting industry standards through expertise, reliability, and
+            innovation
+          </p>
+        </div>
+        <div class="reasons-grid">
+          <div class="reason-card">
+            <div class="reason-number">01</div>
+            <h3>Expertise-Driven Solutions</h3>
+            <p>
+              Our team brings decades of combined experience in industrial
+              engineering and consulting.
+            </p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-number">02</div>
+            <h3>Proven Reliability</h3>
+            <p>
+              Trusted by leading manufacturers and industrial enterprises across
+              India.
+            </p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-number">03</div>
+            <h3>Advanced Technology</h3>
+            <p>
+              We leverage cutting-edge industrial technologies for optimal
+              performance.
+            </p>
+          </div>
+          <div class="reason-card">
+            <div class="reason-number">04</div>
+            <h3>Skilled Professionals</h3>
+            <p>
+              Certified engineers and consultants dedicated to your project
+              success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3>500+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <h3>100+</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-card">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <h3>24/7</h3>
+            <p>Technical Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Transform Your Industrial Operations?</h2>
+        <p>
+          Contact our expert team today to discuss your specific industrial
+          needs and explore tailored solutions.
+        </p>
+        <a href="contact.html" class="btn btn-light">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>TRIEDGE Industrial Solutions LLP</h4>
+            <p>Engineering Excellence. Industrial Precision.</p>
+            <div class="social-icons">
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">Industrial Consulting</a></li>
+              <li><a href="services.html">Engineering Solutions</a></li>
+              <li><a href="services.html">Equipment Maintenance</a></li>
+              <li><a href="services.html">Automation Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Contact Info</h5>
+            <p><i class="fas fa-map-marker-alt"></i> India</p>
+            <p><i class="fas fa-phone"></i> +91 (XXX) XXX-XXXX</p>
+            <p><i class="fas fa-envelope"></i> info@triedge.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 TRIEDGE Industrial Solutions LLP. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Why Choose TRIEDGE? Expertise, Reliability, Technology, Professionals, and Client-Centric Approach set us apart."
+    />
+    <meta
+      name="keywords"
+      content="Why TRIEDGE, Industrial Expertise, Reliability, Innovation, Client Services"
+    />
+    <title>Why TRIEDGE - TRIEDGE Industrial Solutions</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ================= WHY TRIEDGE PAGE PREMIUM ================= */
+
+      /* ===== HEADER ===== */
+      .page-header {
+        padding: 120px 0 80px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .page-header h1 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .page-header p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== INTRO ===== */
+      .why-intro {
+        padding: 80px 0 40px;
+        text-align: center;
+      }
+
+      /* ===== REASONS ===== */
+      .why-reasons {
+        padding: 80px 0;
+      }
+
+      .reasons-detailed-grid {
+        display: grid;
+        gap: 60px;
+      }
+
+      /* SINGLE REASON */
+      .reason-section {
+        background: rgba(255, 255, 255, 0.04);
+        padding: 40px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: 0.3s;
+      }
+
+      .reason-section:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      }
+
+      /* HEADER */
+      .reason-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .reason-icon.large {
+        font-size: 28px;
+        color: #ff7a00;
+      }
+
+      .reason-section h3 {
+        font-size: 26px;
+      }
+
+      /* TEXT */
+      .reason-details p {
+        color: #aaa;
+        margin-bottom: 15px;
+      }
+
+      .reason-details h5 {
+        margin-top: 15px;
+      }
+
+      /* LIST */
+      .reason-details ul {
+        margin-top: 10px;
+      }
+
+      .reason-details ul li {
+        margin-bottom: 8px;
+        padding-left: 18px;
+        position: relative;
+      }
+
+      .reason-details ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #ff7a00;
+      }
+
+      /* ===== ADVANTAGES ===== */
+      .competitive-advantages {
+        padding: 100px 0;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .advantage-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 14px;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+      }
+
+      .advantage-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .advantage-number {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+
+      /* ===== TABLE ===== */
+      .why-comparison {
+        padding: 100px 0;
+      }
+
+      .comparison-table-wrapper {
+        overflow-x: auto;
+        margin-top: 40px;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .comparison-table th {
+        background: #ff7a00;
+        color: white;
+        padding: 14px;
+        text-align: left;
+      }
+
+      .comparison-table td {
+        padding: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: #1a1515;
+      }
+
+      .comparison-table tr:hover {
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      /* ===== TESTIMONIALS ===== */
+      .testimonials {
+        padding: 100px 0;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .testimonial-stars {
+        color: #ff7a00;
+        margin-bottom: 10px;
+      }
+
+      .testimonial-text {
+        color: #271f1f;
+        margin-bottom: 10px;
+      }
+
+      .testimonial-author {
+        font-size: 13px;
+        color: #aaa;
+      }
+
+      /* ===== BENEFITS ===== */
+      .partnership-benefits {
+        padding: 100px 0;
+      }
+
+      .benefits-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .benefits-column h4 {
+        margin-bottom: 10px;
+      }
+
+      .benefits-ul li {
+        margin-bottom: 10px;
+      }
+
+      .benefits-ul i {
+        color: #ff7a00;
+        margin-right: 8px;
+      }
+
+      /* ===== CTA ===== */
+      .cta-section {
+        padding: 100px 0;
+        text-align: center;
+        background: linear-gradient(135deg, #ff7a00, #ff5500);
+        color: white;
+      }
+
+      .cta-section h2 {
+        font-size: 34px;
+      }
+
+      .cta-section p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .page-header h1 {
+          font-size: 32px;
+        }
+
+        .reason-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-cogs"></i>
+          <span>TRIEDGE</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li>
+            <a href="why-triedge.html" class="nav-link active">Why Triedge</a>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+      class="page-header"
+      style="
+        background:
+          linear-gradient(rgba(15, 35, 70, 0.7), rgba(15, 35, 70, 0.7)),
+          url(&quot;https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&quot;);
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <h1>Why Choose TRIEDGE?</h1>
+        <p>The Factors That Set Us Apart</p>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="why-intro">
+      <div class="container">
+        <div class="section-header">
+          <h2>Setting Industry Standards</h2>
+          <p>
+            Multiple factors combine to make TRIEDGE the preferred choice for
+            industrial and engineering solutions. Here's why leading companies
+            trust us.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Reasons Grid -->
+    <section class="why-reasons">
+      <div class="container">
+        <div class="reasons-detailed-grid">
+          <!-- Reason 1: Expertise -->
+          <div class="reason-section">
+            <div class="reason-header">
+              <div class="reason-icon large">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Expertise-Driven Solutions</h3>
+            </div>
+            <div class="reason-details">
+              <p>
+                Our team brings decades of combined experience across diverse
+                industrial sectors and technical domains. This depth of
+                expertise enables us to deliver sophisticated solutions to
+                complex industrial challenges.
+              </p>
+              <h5>What This Means for You:</h5>
+              <ul>
+                <li>
+                  Access to industry best practices and proven methodologies
+                </li>
+                <li>Expert guidance on technical decisions and trade-offs</li>
+                <li>
+                  Faster problem-solving based on similar past experiences
+                </li>
+                <li>Advanced solutions leveraging latest technologies</li>
+                <li>Risk mitigation through experienced team oversight</li>
+              </ul>
+              <h5>Our Expert Team Includes:</h5>
+              <ul>
+                <li>Certified Mechanical, Electrical, and Civil Engineers</li>
+                <li>Industry Consultants with 15+ years experience</li>
+                <li>Automation and Control System Specialists</li>
+                <li>Project Management Professionals with PMI certification</li>
+                <li>Quality and Safety Compliance Experts</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Reason 2: Reliability -->
+          <div class="reason-section">
+            <div class="reason-header">
+              <div class="reason-icon large">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Proven Reliability</h3>
+            </div>
+            <div class="reason-details">
+              <p>
+                Reliability is foundational to our brand. We have built our
+                reputation on consistent delivery of high-quality results,
+                meeting commitments, and maintaining lasting client
+                relationships.
+              </p>
+              <h5>What This Means for You:</h5>
+              <ul>
+                <li>Dependable project delivery with minimal delays</li>
+                <li>Consistent quality across all projects and engagements</li>
+                <li>Predictable budgets and cost management</li>
+                <li>Transparent communication and regular reporting</li>
+                <li>Long-term partnership and ongoing support</li>
+              </ul>
+              <h5>Our Track Record:</h5>
+              <ul>
+                <li>500+ successfully completed projects</li>
+                <li>98%+ client satisfaction rate</li>
+                <li>95%+ on-time project delivery</li>
+                <li>100+ satisfied long-term clients</li>
+                <li>Zero litigation or contractual disputes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Reason 3: Technology -->
+          <div class="reason-section">
+            <div class="reason-header">
+              <div class="reason-icon large">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h3>Advanced Technology</h3>
+            </div>
+            <div class="reason-details">
+              <p>
+                We leverage cutting-edge technologies to deliver innovative
+                solutions that provide competitive advantages and future-proof
+                investments for our clients.
+              </p>
+              <h5>What This Means for You:</h5>
+              <ul>
+                <li>Access to latest industrial technologies and tools</li>
+                <li>Scalable solutions that evolve with your business</li>
+                <li>Integration with Industry 4.0 and IoT technologies</li>
+                <li>AI and machine learning applications for optimization</li>
+                <li>Cloud-enabled monitoring and analytics</li>
+              </ul>
+              <h5>Our Technology Stack:</h5>
+              <ul>
+                <li>Advanced PLC and Control Systems</li>
+                <li>SCADA and HMI Platforms</li>
+                <li>IoT and Real-time Monitoring Solutions</li>
+                <li>Data Analytics and Business Intelligence Tools</li>
+                <li>CAD and Engineering Simulation Software</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Reason 4: Professionals -->
+          <div class="reason-section">
+            <div class="reason-header">
+              <div class="reason-icon large">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>Skilled Professionals</h3>
+            </div>
+            <div class="reason-details">
+              <p>
+                Our team consists of highly skilled and dedicated professionals
+                who are passionate about delivering excellence. Each team member
+                brings specialized expertise and commitment to quality.
+              </p>
+              <h5>What This Means for You:</h5>
+              <ul>
+                <li>Dedicated project teams focused on your success</li>
+                <li>Professionals with specialized certifications</li>
+                <li>Continuous learning and skill development</li>
+                <li>Hands-on involvement from senior leadership</li>
+                <li>Professional development and succession planning</li>
+              </ul>
+              <h5>Professional Certifications:</h5>
+              <ul>
+                <li>PMP (Project Management Professional)</li>
+                <li>Six Sigma and Lean Certifications</li>
+                <li>ISO and Industry-specific Certifications</li>
+                <li>Advanced Technical Certifications</li>
+                <li>Safety and Compliance Training</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Reason 5: Client-Centric -->
+          <div class="reason-section">
+            <div class="reason-header">
+              <div class="reason-icon large">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3>Client-Centric Approach</h3>
+            </div>
+            <div class="reason-details">
+              <p>
+                Your success is our success. We adopt a genuine partnership
+                approach, working closely with you to ensure that solutions
+                align with your business objectives and deliver measurable
+                value.
+              </p>
+              <h5>What This Means for You:</h5>
+              <ul>
+                <li>Customized solutions tailored to your needs</li>
+                <li>Transparent partnership and collaboration</li>
+                <li>Your goals become our priorities</li>
+                <li>Regular feedback and continuous improvement</li>
+                <li>Long-term relationship and ongoing support</li>
+              </ul>
+              <h5>Our Client-Centric Practices:</h5>
+              <ul>
+                <li>Dedicated client relationship managers</li>
+                <li>Regular business review meetings</li>
+                <li>Proactive communication and updates</li>
+                <li>Flexible engagement models</li>
+                <li>24/7 support helpdesk and escalation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitive Advantages -->
+    <section class="competitive-advantages">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Competitive Advantages</h2>
+          <p>What distinctly positions TRIEDGE in the market</p>
+        </div>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="advantage-number">01</div>
+            <h4>Integrated Services</h4>
+            <p>
+              Comprehensive suite of services from consulting through delivery,
+              eliminating coordination complexity.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-number">02</div>
+            <h4>Multi-Industry Experience</h4>
+            <p>
+              Cross-industry insights enable innovative solutions and best
+              practice transfer across sectors.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-number">03</div>
+            <h4>Proven Methodologies</h4>
+            <p>
+              Structured, repeatable processes ensure consistent quality and
+              predictable outcomes.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-number">04</div>
+            <h4>Local Expertise</h4>
+            <p>
+              Deep understanding of Indian industrial landscape and regulatory
+              environment.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-number">05</div>
+            <h4>Value Orientation</h4>
+            <p>
+              Focus on delivering measurable ROI and sustainable value creation,
+              not just project completion.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-number">06</div>
+            <h4>Flexibility</h4>
+            <p>
+              Adaptable engagement models and customizable solutions to fit
+              diverse client needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Chart -->
+    <section class="why-comparison">
+      <div class="container">
+        <div class="section-header">
+          <h2>TRIEDGE vs. Typical Vendors</h2>
+          <p>How we differentiate in the market</p>
+        </div>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th>TRIEDGE</th>
+                <th>Typical Vendors</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Experience</td>
+                <td>15+ years, 500+ projects</td>
+                <td>Variable, often limited</td>
+              </tr>
+              <tr>
+                <td>Team Expertise</td>
+                <td>Certified, specialized professionals</td>
+                <td>Generic, general resources</td>
+              </tr>
+              <tr>
+                <td>Industry Focus</td>
+                <td>Multi-industry depth</td>
+                <td>Often single industry</td>
+              </tr>
+              <tr>
+                <td>Process Maturity</td>
+                <td>CMM Level processes, proven methodology</td>
+                <td>Ad-hoc, project-specific</td>
+              </tr>
+              <tr>
+                <td>Technology Stack</td>
+                <td>Latest, cutting-edge solutions</td>
+                <td>Legacy, outdated technologies</td>
+              </tr>
+              <tr>
+                <td>On-Time Delivery</td>
+                <td>95%+ track record</td>
+                <td>Often delayed</td>
+              </tr>
+              <tr>
+                <td>Client Support</td>
+                <td>24/7, dedicated relationships</td>
+                <td>Limited, reactive support</td>
+              </tr>
+              <tr>
+                <td>Post-Delivery</td>
+                <td>Ongoing support and optimization</td>
+                <td>Limited, handoff-focused</td>
+              </tr>
+              <tr>
+                <td>ROI Focus</td>
+                <td>Measurable value creation</td>
+                <td>Cost-driven</td>
+              </tr>
+              <tr>
+                <td>Satisfaction Rate</td>
+                <td>98%+</td>
+                <td>Average ~75%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Clients Say</h2>
+          <p>Testimonials from satisfied industry partners</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "TRIEDGE delivered exceptional results on our manufacturing
+              optimization project. Their expertise and dedication resulted in a
+              32% improvement in production efficiency. Highly recommended!"
+            </p>
+            <p class="testimonial-author">
+              - Rajesh Kumar, Operations Director, Leading Manufacturer
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with TRIEDGE has been transformative for our operations.
+              Their automation solutions improved efficiency by 40% and
+              eliminated countless manual processes. Great partnership!"
+            </p>
+            <p class="testimonial-author">
+              - Priya Singh, Plant Manager, Industrial Equipment Supplier
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "TRIEDGE's consulting services provided strategic clarity to our
+              operations. Their detailed analysis and recommendations helped us
+              identify significant cost savings opportunities. Outstanding
+              work!"
+            </p>
+            <p class="testimonial-author">
+              - Vikram Patel, CFO, Energy Sector Company
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "The TRIEDGE team's technical expertise and professionalism
+              exceeded our expectations. They managed our complex project
+              seamlessly and delivered on-time, on-budget. Definitely engaging
+              them for future projects!"
+            </p>
+            <p class="testimonial-author">
+              - Anjali Sharma, Project Manager, Infrastructure Development
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnership Benefits -->
+    <section class="partnership-benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2>Benefits of Partnering with TRIEDGE</h2>
+          <p>What you gain from our partnership</p>
+        </div>
+        <div class="benefits-list">
+          <div class="benefits-column">
+            <h4>Immediate Benefits</h4>
+            <ul class="benefits-ul">
+              <li>
+                <i class="fas fa-check-circle"></i> Expert team focused on your
+                project
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Faster solution
+                implementation
+              </li>
+              <li><i class="fas fa-check-circle"></i> Reduced project risks</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Quality assurance from day
+                one
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Transparent communication
+              </li>
+            </ul>
+          </div>
+          <div class="benefits-column">
+            <h4>Long-Term Benefits</h4>
+            <ul class="benefits-ul">
+              <li>
+                <i class="fas fa-check-circle"></i> Sustained operational
+                improvements
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Continuous optimization
+                opportunities
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Knowledge transfer and
+                capability building
+              </li>
+              <li><i class="fas fa-check-circle"></i> 24/7 ongoing support</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Strategic partnership for
+                growth
+              </li>
+            </ul>
+          </div>
+          <div class="benefits-column">
+            <h4>Financial Benefits</h4>
+            <ul class="benefits-ul">
+              <li>
+                <i class="fas fa-check-circle"></i> Predictable costs and
+                budgets
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Measurable ROI improvements
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Reduced operational expenses
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Faster payback periods
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Increased asset utilization
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Experience the TRIEDGE Difference</h2>
+        <p>
+          Let us demonstrate why leading companies choose TRIEDGE for their
+          industrial and engineering needs.
+        </p>
+        <a href="contact.html" class="btn btn-light"
+          >Start Your Partnership Today</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>TRIEDGE Industrial Solutions LLP</h4>
+            <p>Engineering Excellence. Industrial Precision.</p>
+            <div class="social-icons">
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">Industrial Consulting</a></li>
+              <li><a href="services.html">Engineering Solutions</a></li>
+              <li><a href="services.html">Equipment Maintenance</a></li>
+              <li><a href="services.html">Automation Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Contact Info</h5>
+            <p><i class="fas fa-map-marker-alt"></i> India</p>
+            <p><i class="fas fa-phone"></i> +91 (XXX) XXX-XXXX</p>
+            <p><i class="fas fa-envelope"></i> info@triedge.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 TRIEDGE Industrial Solutions LLP. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

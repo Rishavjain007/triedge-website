@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TRIEDGE Industrial Solutions - Serving Manufacturing, Heavy Industries, Infrastructure, Energy, and Engineering sectors with proven expertise."
+    />
+    <meta
+      name="keywords"
+      content="Manufacturing, Heavy Industries, Infrastructure, Energy Utilities, Engineering, Industrial Solutions"
+    />
+    <title>Industries - TRIEDGE Industrial Solutions</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ================= INDUSTRIES PAGE PREMIUM ================= */
+
+      /* ===== HEADER ===== */
+      .page-header {
+        padding: 120px 0 80px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .page-header h1 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .page-header p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== INTRO ===== */
+      .industries-intro {
+        padding: 80px 0 40px;
+        text-align: center;
+      }
+
+      /* ===== GRID ===== */
+      .industries-grid-section {
+        padding: 80px 0;
+      }
+
+      .industries-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+      }
+
+      /* CARD */
+      .industry-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 14px;
+        overflow: hidden;
+        transition: 0.3s;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .industry-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      /* IMAGE */
+      .industry-image {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .industry-image img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+
+      .industry-card:hover img {
+        transform: scale(1.1);
+      }
+
+      /* OVERLAY */
+      .industry-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 25, 47, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .industry-card:hover .industry-overlay {
+        opacity: 1;
+      }
+
+      .view-details {
+        color: white;
+        border: 1px solid white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+
+      /* TEXT */
+      .industry-card h3 {
+        padding: 15px;
+      }
+
+      .industry-card p {
+        padding: 0 15px 20px;
+        color: #aaa;
+      }
+
+      /* ===== DETAILS SECTION ===== */
+      .industry-details {
+        padding: 100px 0;
+      }
+
+      /* GRID */
+      .detail-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 80px;
+      }
+
+      /* ALTERNATE */
+      .industry-detail-section:nth-child(even) .detail-grid {
+        direction: rtl;
+      }
+      .industry-detail-section:nth-child(even) .detail-content {
+        direction: ltr;
+      }
+
+      /* IMAGE */
+      .detail-image img {
+        width: 100%;
+        border-radius: 14px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      /* CONTENT */
+      .detail-content h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .detail-content p {
+        color: #aaa;
+        margin-bottom: 15px;
+      }
+
+      .detail-content h5 {
+        margin-top: 15px;
+      }
+
+      .detail-content ul {
+        margin-top: 10px;
+      }
+
+      .detail-content ul li {
+        margin-bottom: 8px;
+        padding-left: 18px;
+        position: relative;
+      }
+
+      .detail-content ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #ff7a00;
+      }
+
+      /* ===== STATS ===== */
+      .industry-stats {
+        padding: 100px 0;
+        background: rgba(255, 122, 0, 0.05);
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        text-align: center;
+        margin-top: 40px;
+      }
+      .stat-card p{
+        color: #ff5500;
+      }
+
+      .stat-number {
+        font-size: 40px;
+        color: #ff7a00;
+        font-weight: 700;
+      }
+
+      /* ===== CTA ===== */
+      .cta-section {
+        padding: 100px 0;
+        text-align: center;
+        background: linear-gradient(135deg, #ff7a00, #ff5500);
+        color: white;
+      }
+
+      .cta-section h2 {
+        font-size: 34px;
+      }
+
+      .cta-section p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .industry-detail-section:nth-child(even) .detail-grid {
+          direction: ltr;
+        }
+
+        .page-header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-cogs"></i>
+          <span>TRIEDGE</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li>
+            <a href="industries.html" class="nav-link active">Industries</a>
+          </li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="why-triedge.html" class="nav-link">Why Triedge</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+      class="page-header"
+      style="
+        background:
+          linear-gradient(rgba(15, 35, 70, 0.7), rgba(15, 35, 70, 0.7)),
+          url(&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhEGpnGB15vX3Rwvz-me8aC74TD6Arl9TNFA&s&quot;);
+        background-size: contain;
+      "
+    >
+      <div class="container">
+        <h1>Industries We Serve</h1>
+        <p>Proven Expertise Across Multiple Sectors</p>
+      </div>
+    </section>
+
+    <!-- Industries Introduction -->
+    <section class="industries-intro">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Industry Expertise</h2>
+          <p>
+            With over 15 years of experience, TRIEDGE has successfully delivered
+            solutions across diverse industrial sectors, understanding the
+            unique challenges and requirements of each industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries Grid -->
+    <section class="industries-grid-section">
+      <div class="container">
+        <div class="industries-grid">
+          <!-- Manufacturing Industry -->
+          <div class="industry-card">
+            <div class="industry-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2w_rXHi3vT63N63R-o5VBWrBNh7_CBQJX4Q&s"
+                alt="Manufacturing Industry"
+              />
+              <div class="industry-overlay">
+                <a href="#manufacturing" class="view-details">View Details</a>
+              </div>
+            </div>
+            <h3>Manufacturing</h3>
+            <p>
+              Optimizing production lines, equipment efficiency, and operational
+              excellence for modern manufacturers.
+            </p>
+          </div>
+
+          <!-- Heavy Industries -->
+          <div class="industry-card">
+            <div class="industry-image">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80"
+                alt="Heavy Industries"
+              />
+              <div class="industry-overlay">
+                <a href="#heavy-industries" class="view-details"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <h3>Heavy Industries</h3>
+            <p>
+              Supporting steel, mining, and large-scale manufacturing with
+              specialized engineering solutions.
+            </p>
+          </div>
+
+          <!-- Infrastructure -->
+          <div class="industry-card">
+            <div class="industry-image">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80"
+                alt="Infrastructure"
+              />
+              <div class="industry-overlay">
+                <a href="#infrastructure" class="view-details">View Details</a>
+              </div>
+            </div>
+            <h3>Infrastructure</h3>
+            <p>
+              Contributing to large-scale infrastructure projects with technical
+              expertise and project management.
+            </p>
+          </div>
+
+          <!-- Energy & Utilities -->
+          <div class="industry-card">
+            <div class="industry-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMavh9OTYMDcWl1OP-tJAET2zSjar56CFZww&s"
+                alt="Energy & Utilities"
+              />
+              <div class="industry-overlay">
+                <a href="#energy" class="view-details">View Details</a>
+              </div>
+            </div>
+            <h3>Energy & Utilities</h3>
+            <p>
+              Enhancing efficiency and reliability in power generation and
+              utility distribution systems.
+            </p>
+          </div>
+
+          <!-- Engineering Services -->
+          <div class="industry-card">
+            <div class="industry-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBxY0o7gbUEeIE5xMvNSkMErjaGcI956GMg&s"
+                alt="Engineering Services"
+              />
+              <div class="industry-overlay">
+                <a href="#engineering" class="view-details">View Details</a>
+              </div>
+            </div>
+            <h3>Engineering Services</h3>
+            <p>
+              Providing specialized consulting and technical support to
+              engineering firms and design houses.
+            </p>
+          </div>
+
+          <!-- Logistics & Warehousing -->
+          <div class="industry-card">
+            <div class="industry-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlEVqgZIPcehGyWzwBg7gLpDRZUOLtvIaKaw&s"
+                alt="Logistics & Warehousing"
+              />
+              <div class="industry-overlay">
+                <a href="#logistics" class="view-details">View Details</a>
+              </div>
+            </div>
+            <h3>Logistics & Warehousing</h3>
+            <p>
+              Optimizing material handling systems and warehouse operations for
+              improved throughput.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Industry Sections -->
+    <section class="industry-details">
+      <div class="container">
+        <!-- Manufacturing Detail -->
+        <div class="industry-detail-section" id="manufacturing">
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2w_rXHi3vT63N63R-o5VBWrBNh7_CBQJX4Q&s"
+                alt="Manufacturing Solutions"
+              />
+            </div>
+            <div class="detail-content">
+              <h3>Manufacturing</h3>
+              <p>
+                The manufacturing sector faces constant pressure to improve
+                efficiency, reduce costs, and maintain competitive advantage.
+                Our comprehensive solutions help manufacturers streamline
+                operations, optimize production lines, and implement
+                cutting-edge automation technologies.
+              </p>
+              <h5>Our Focus Areas:</h5>
+              <ul>
+                <li>Production line optimization and modernization</li>
+                <li>Equipment selection and integration</li>
+                <li>Quality control and process standardization</li>
+                <li>Preventive maintenance programs</li>
+                <li>Lean manufacturing and Six Sigma implementation</li>
+                <li>Supply chain optimization</li>
+              </ul>
+              <h5>Client Success Metrics:</h5>
+              <ul>
+                <li>Average 25-35% improvement in production efficiency</li>
+                <li>20-30% reduction in operational costs</li>
+                <li>50%+ reduction in equipment downtime</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Heavy Industries Detail -->
+        <div class="industry-detail-section" id="heavy-industries">
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img
+                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80"
+                alt="Heavy Industries"
+              />
+            </div>
+            <div class="detail-content">
+              <h3>Heavy Industries</h3>
+              <p>
+                Heavy industries including steel, mining, and large-scale
+                manufacturing require specialized expertise and robust
+                engineering solutions. TRIEDGE brings deep domain knowledge and
+                proven experience in managing complex industrial challenges
+                specific to heavy industries.
+              </p>
+              <h5>Our Focus Areas:</h5>
+              <ul>
+                <li>Steel plant operations and optimization</li>
+                <li>Mining equipment and process support</li>
+                <li>Large-scale machinery maintenance</li>
+                <li>Plant upgrades and expansions</li>
+                <li>Safety and compliance management</li>
+                <li>Environmental protection systems</li>
+              </ul>
+              <h5>Client Success Metrics:</h5>
+              <ul>
+                <li>Improved plant uptime by 15-20%</li>
+                <li>Reduced maintenance costs by 30-40%</li>
+                <li>Enhanced safety and compliance records</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Infrastructure Detail -->
+        <div class="industry-detail-section" id="infrastructure">
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80"
+                alt="Infrastructure Projects"
+              />
+            </div>
+            <div class="detail-content">
+              <h3>Infrastructure</h3>
+              <p>
+                Large-scale infrastructure projects require precise engineering,
+                rigorous project management, and technical excellence. We
+                support infrastructure development by providing specialized
+                engineering services, project consulting, and technical
+                execution support.
+              </p>
+              <h5>Our Focus Areas:</h5>
+              <ul>
+                <li>Road and bridge construction support</li>
+                <li>Water treatment and distribution systems</li>
+                <li>Building and facility systems optimization</li>
+                <li>Civil infrastructure design consultation</li>
+                <li>Project planning and execution</li>
+                <li>Quality assurance and testing</li>
+              </ul>
+              <h5>Client Success Metrics:</h5>
+              <ul>
+                <li>On-time project completion rate >95%</li>
+                <li>Quality metrics maintained at highest standards</li>
+                <li>Zero-defect delivery in critical systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Energy & Utilities Detail -->
+        <div class="industry-detail-section" id="energy">
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMavh9OTYMDcWl1OP-tJAET2zSjar56CFZww&s"
+                alt="Energy Solutions"
+              />
+            </div>
+            <div class="detail-content">
+              <h3>Energy & Utilities</h3>
+              <p>
+                The energy and utilities sector demands the highest levels of
+                reliability, safety, and efficiency. Our solutions help power
+                generation facilities, distribution networks, and utility
+                companies maintain optimal performance and regulatory
+                compliance.
+              </p>
+              <h5>Our Focus Areas:</h5>
+              <ul>
+                <li>Power generation optimization</li>
+                <li>Transmission and distribution system support</li>
+                <li>Renewable energy integration</li>
+                <li>Energy efficiency consulting</li>
+                <li>Regulatory compliance support</li>
+                <li>Predictive maintenance systems</li>
+              </ul>
+              <h5>Client Success Metrics:</h5>
+              <ul>
+                <li>System reliability improvement to 98%+</li>
+                <li>Energy efficiency gains of 15-25%</li>
+                <li>Reduced unplanned outages by 40%+</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Engineering Services Detail -->
+        <div class="industry-detail-section" id="engineering">
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkBxY0o7gbUEeIE5xMvNSkMErjaGcI956GMg&s"
+                alt="Engineering Services"
+              />
+            </div>
+            <div class="detail-content">
+              <h3>Engineering Services</h3>
+              <p>
+                We provide specialized technical support and consulting services
+                to engineering firms, design houses, and EPC contractors. Our
+                expertise augments their capabilities and accelerates project
+                delivery for diverse industrial and infrastructure projects.
+              </p>
+              <h5>Our Focus Areas:</h5>
+              <ul>
+                <li>Design review and optimization</li>
+                <li>Technical feasibility studies</li>
+                <li>CAD and modeling services</li>
+                <li>Engineering consulting and support</li>
+                <li>Quality assurance and testing coordination</li>
+                <li>Commissioning and startups support</li>
+              </ul>
+              <h5>Client Success Metrics:</h5>
+              <ul>
+                <li>Project timeline acceleration by 20-30%</li>
+                <li>Design optimization leading to cost savings</li>
+                <li>Enhanced quality and compliance in deliverables</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logistics & Warehousing Detail -->
+        <div class="industry-detail-section" id="logistics">
+          <div class="detail-grid">
+            <div class="detail-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlEVqgZIPcehGyWzwBg7gLpDRZUOLtvIaKaw&s"
+                alt="Logistics Solutions"
+              />
+            </div>
+            <div class="detail-content">
+              <h3>Logistics & Warehousing</h3>
+              <p>
+                Modern logistics and warehousing operations require efficient
+                material handling systems, optimized layout design, and
+                technology integration. We help logistics providers and
+                warehousing operators maximize throughput and operational
+                efficiency.
+              </p>
+              <h5>Our Focus Areas:</h5>
+              <ul>
+                <li>Material handling system design and optimization</li>
+                <li>Warehouse layout optimization</li>
+                <li>Automation and conveyor systems</li>
+                <li>Inventory management system support</li>
+                <li>Process efficiency improvement</li>
+                <li>Safety and compliance enhancement</li>
+              </ul>
+              <h5>Client Success Metrics:</h5>
+              <ul>
+                <li>Warehouse throughput improvement of 30-40%</li>
+                <li>Labor efficiency gains of 25-35%</li>
+                <li>Error reduction and accuracy improvement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Statistics -->
+    <section class="industry-stats">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Industry Impact</h2>
+          <p>Demonstrable results across all sectors we serve</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <p>Projects Across 6+ Industries</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <p>Satisfied Industry Clients</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">₹50Cr+</div>
+            <p>Aggregate Project Value</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <p>Client Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Find Solutions for Your Industry</h2>
+        <p>
+          Whether you're in manufacturing, heavy industries, infrastructure, or
+          any other sector, TRIEDGE has the expertise to help you succeed.
+        </p>
+        <a href="contact.html" class="btn btn-light"
+          >Discuss Your Industry Needs</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>TRIEDGE Industrial Solutions LLP</h4>
+            <p>Engineering Excellence. Industrial Precision.</p>
+            <div class="social-icons">
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">Industrial Consulting</a></li>
+              <li><a href="services.html">Engineering Solutions</a></li>
+              <li><a href="services.html">Equipment Maintenance</a></li>
+              <li><a href="services.html">Automation Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Contact Info</h5>
+            <p><i class="fas fa-map-marker-alt"></i> India</p>
+            <p><i class="fas fa-phone"></i> +91 (XXX) XXX-XXXX</p>
+            <p><i class="fas fa-envelope"></i> info@triedge.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 TRIEDGE Industrial Solutions LLP. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

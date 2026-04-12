@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TRIEDGE Process Methodology - Requirement Analysis, Planning, Execution, Testing, and Delivery. Our structured approach ensures project success."
+    />
+    <meta
+      name="keywords"
+      content="Process Methodology, Project Management, Quality Assurance, Project Execution"
+    />
+    <title>Process - TRIEDGE Industrial Solutions</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ================= PROCESS PAGE PREMIUM ================= */
+
+      /* ===== HEADER ===== */
+      .page-header {
+        padding: 120px 0 80px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .page-header h1 {
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .page-header p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== INTRO ===== */
+      .process-intro {
+        padding: 80px 0 40px;
+        text-align: center;
+      }
+
+      /* ===== TIMELINE ===== */
+      .process-flow {
+        padding: 80px 0;
+      }
+
+      .process-timeline {
+        position: relative;
+        padding-left: 40px;
+        border-left: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* PHASE */
+      .process-phase {
+        position: relative;
+        margin-bottom: 60px;
+      }
+
+      /* NUMBER */
+      .phase-number {
+        position: absolute;
+        left: -28px;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        background: #ff7a00;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      /* CONTENT */
+      .phase-content {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+      }
+
+      .phase-content:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+
+      .phase-content h3 {
+        margin-bottom: 5px;
+      }
+
+      .phase-duration {
+        font-size: 13px;
+        color: #ff7a00;
+        margin-bottom: 15px;
+      }
+
+      /* LIST */
+      .phase-details ul {
+        margin-top: 10px;
+      }
+
+      .phase-details ul li {
+        margin-bottom: 8px;
+        padding-left: 18px;
+        position: relative;
+      }
+
+      .phase-details ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #ff7a00;
+      }
+
+      /* ===== PRINCIPLES ===== */
+      .process-principles {
+        padding: 100px 0;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .principles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .principle-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 14px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+      }
+
+      .principle-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .principle-icon {
+        font-size: 24px;
+        color: #ff7a00;
+        margin-bottom: 10px;
+      }
+
+      /* ===== COMPARISON TABLE ===== */
+      .process-comparison-section {
+        padding: 100px 0;
+      }
+
+      .comparison-table-wrapper {
+        overflow-x: auto;
+        margin-top: 40px;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .comparison-table th {
+        background: #ff7a00;
+        color: white;
+        padding: 14px;
+        text-align: left;
+      }
+
+      .comparison-table td {
+        padding: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: #221a1a;
+      }
+
+      .comparison-table tr:hover {
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      /* ===== TIMELINE VISUAL ===== */
+      .process-timeline-visual {
+        padding: 100px 0;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .timeline-bar {
+        display: flex;
+        margin-top: 40px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .timeline-segment {
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+      }
+
+      /* ===== SUCCESS FACTORS ===== */
+      .success-factors {
+        padding: 100px 0;
+      }
+
+      .factors-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .factor-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 14px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.3s;
+      }
+
+      .factor-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .factor-icon {
+        font-size: 24px;
+        color: #ff7a00;
+        margin-bottom: 10px;
+      }
+
+      /* ===== CTA ===== */
+      .cta-section {
+        padding: 100px 0;
+        text-align: center;
+        background: linear-gradient(135deg, #ff7a00, #ff5500);
+        color: white;
+      }
+
+      .cta-section h2 {
+        font-size: 34px;
+      }
+
+      .cta-section p {
+        margin-top: 10px;
+        opacity: 0.9;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .process-timeline {
+          padding-left: 20px;
+        }
+
+        .phase-number {
+          left: -20px;
+          width: 40px;
+          height: 40px;
+        }
+
+        .page-header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-cogs"></i>
+          <span>TRIEDGE</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="process.html" class="nav-link active">Process</a></li>
+          <li><a href="why-triedge.html" class="nav-link">Why Triedge</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+      class="page-header"
+      style="
+        background:
+          linear-gradient(rgba(15, 35, 70, 0.7), rgba(15, 35, 70, 0.7)),
+          url(&quot;https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&quot;);
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <h1>Our Process</h1>
+        <p>Structured, Proven Methodology for Project Success</p>
+      </div>
+    </section>
+
+    <!-- Process Introduction -->
+    <section class="process-intro">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Proven Process Methodology</h2>
+          <p>
+            TRIEDGE follows a structured, time-tested process that ensures
+            successful project delivery, quality outcomes, and client
+            satisfaction. Our methodology is flexible enough to accommodate
+            various project types while maintaining rigor and consistency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Process Flow -->
+    <section class="process-flow">
+      <div class="container">
+        <div class="process-timeline">
+          <!-- Phase 1: Requirement Analysis -->
+          <div class="process-phase">
+            <div class="phase-number">01</div>
+            <div class="phase-content">
+              <h3>Requirement Analysis</h3>
+              <p class="phase-duration">Duration: 1-2 weeks</p>
+              <div class="phase-details">
+                <p>
+                  We begin by thoroughly understanding your specific needs,
+                  constraints, objectives, and success criteria. This phase is
+                  critical in setting the foundation for project success.
+                </p>
+                <h5>Activities Include:</h5>
+                <ul>
+                  <li>Stakeholder interviews and kickoff meetings</li>
+                  <li>Business requirement documentation</li>
+                  <li>Technical requirement specification</li>
+                  <li>Scope definition and boundary setting</li>
+                  <li>Risk and constraint identification</li>
+                  <li>Success metrics and KPI definition</li>
+                </ul>
+                <h5>Deliverables:</h5>
+                <ul>
+                  <li>Requirements Document</li>
+                  <li>Project Charter</li>
+                  <li>Scope Statement</li>
+                  <li>Risk Register</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2: Planning & Design -->
+          <div class="process-phase">
+            <div class="phase-number">02</div>
+            <div class="phase-content">
+              <h3>Planning & Design</h3>
+              <p class="phase-duration">Duration: 2-4 weeks</p>
+              <div class="phase-details">
+                <p>
+                  Based on the requirements, we develop a comprehensive plan and
+                  detailed design that serves as the roadmap for execution. Our
+                  designs are validated and optimized before moving forward.
+                </p>
+                <h5>Activities Include:</h5>
+                <ul>
+                  <li>Detailed project planning and scheduling</li>
+                  <li>Resource allocation and team structuring</li>
+                  <li>Technical design and architecture development</li>
+                  <li>Engineering design and drawings</li>
+                  <li>Budget estimation and financial planning</li>
+                  <li>Communication and stakeholder management plan</li>
+                </ul>
+                <h5>Deliverables:</h5>
+                <ul>
+                  <li>Project Plan and Schedule</li>
+                  <li>Technical Specifications</li>
+                  <li>Engineering Drawings and CAD Models</li>
+                  <li>Budget and Resource Plan</li>
+                  <li>Communication Plan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3: Execution -->
+          <div class="process-phase">
+            <div class="phase-number">03</div>
+            <div class="phase-content">
+              <h3>Execution</h3>
+              <p class="phase-duration">
+                Duration: Varies by project (weeks to months)
+              </p>
+              <div class="phase-details">
+                <p>
+                  Our dedicated team executes the project according to the
+                  approved plan. We maintain strict adherence to timelines,
+                  quality standards, and budget allocations with regular
+                  monitoring and adaptive management.
+                </p>
+                <h5>Activities Include:</h5>
+                <ul>
+                  <li>Implementation per approved plan</li>
+                  <li>Equipment procurement and installation</li>
+                  <li>System integration and configuration</li>
+                  <li>Regular progress monitoring and reporting</li>
+                  <li>Change management and scope control</li>
+                  <li>Issue and risk management</li>
+                </ul>
+                <h5>Deliverables:</h5>
+                <ul>
+                  <li>Installed and Configured Systems</li>
+                  <li>Weekly Progress Reports</li>
+                  <li>Updated Project Documentation</li>
+                  <li>Issue and Change Logs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4: Testing & QA -->
+          <div class="process-phase">
+            <div class="phase-number">04</div>
+            <div class="phase-content">
+              <h3>Testing & Quality Assurance</h3>
+              <p class="phase-duration">Duration: 1-3 weeks</p>
+              <div class="phase-details">
+                <p>
+                  Comprehensive testing and quality assurance ensures that all
+                  deliverables meet specification requirements and performance
+                  standards. We validate functionality, safety, and compliance.
+                </p>
+                <h5>Activities Include:</h5>
+                <ul>
+                  <li>Functional testing and validation</li>
+                  <li>Performance testing and optimization</li>
+                  <li>Safety and compliance verification</li>
+                  <li>User acceptance testing</li>
+                  <li>Documentation review and finalization</li>
+                  <li>Defect identification and rectification</li>
+                </ul>
+                <h5>Deliverables:</h5>
+                <ul>
+                  <li>Test Report and Sign-off</li>
+                  <li>Performance Validation Report</li>
+                  <li>Compliance Certificate</li>
+                  <li>Final Documentation and Manuals</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 5: Delivery & Support -->
+          <div class="process-phase">
+            <div class="phase-number">05</div>
+            <div class="phase-content">
+              <h3>Delivery & Support</h3>
+              <p class="phase-duration">Duration: Ongoing</p>
+              <div class="phase-details">
+                <p>
+                  Final delivery marks the beginning of our partnership. We
+                  ensure smooth handover, provide training, and offer
+                  comprehensive ongoing support to ensure sustained success and
+                  value creation.
+                </p>
+                <h5>Activities Include:</h5>
+                <ul>
+                  <li>System handover and knowledge transfer</li>
+                  <li>User training and documentation</li>
+                  <li>Go-live support and monitoring</li>
+                  <li>Issue resolution and troubleshooting</li>
+                  <li>Performance monitoring and optimization</li>
+                  <li>Ongoing maintenance and support plans</li>
+                </ul>
+                <h5>Deliverables:</h5>
+                <ul>
+                  <li>Final Delivery Report</li>
+                  <li>Training Materials</li>
+                  <li>Support and Maintenance Plan</li>
+                  <li>Performance Dashboard</li>
+                  <li>24/7 Support Helpdesk Access</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Principles -->
+    <section class="process-principles">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Process Principles</h2>
+          <p>Core values that guide our project execution</p>
+        </div>
+        <div class="principles-grid">
+          <div class="principle-card">
+            <div class="principle-icon">
+              <i class="fas fa-flag"></i>
+            </div>
+            <h4>Clarity</h4>
+            <p>
+              Clear objectives, transparent communication, and explicit
+              deliverables ensure everyone is aligned on project goals and
+              expectations.
+            </p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h4>Accountability</h4>
+            <p>
+              Well-defined roles, responsibilities, and regular reporting ensure
+              accountability at every level of project execution.
+            </p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h4>Agility</h4>
+            <p>
+              While maintaining structure, we remain flexible and adaptive to
+              address changing requirements and emerging opportunities.
+            </p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Continuous Improvement</h4>
+            <p>
+              We learn from each project, continuously refining our processes
+              and methodologies for better outcomes.
+            </p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <h4>Collaboration</h4>
+            <p>
+              Strong partnership with clients and stakeholders ensures shared
+              ownership and mutual success throughout the project lifecycle.
+            </p>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h4>Quality First</h4>
+            <p>
+              Quality is not an afterthought but integrated into every phase of
+              our process, from planning through delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Comparison -->
+    <section class="process-comparison-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Approach vs. Traditional Methods</h2>
+          <p>What makes our process more effective</p>
+        </div>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Aspect</th>
+                <th>TRIEDGE Approach</th>
+                <th>Traditional Approach</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Requirement Understanding</td>
+                <td>In-depth stakeholder engagement and detailed analysis</td>
+                <td>Surface-level requirement documentation</td>
+              </tr>
+              <tr>
+                <td>Planning</td>
+                <td>Comprehensive planning with risk mitigation</td>
+                <td>Basic timeline and task allocation</td>
+              </tr>
+              <tr>
+                <td>Execution</td>
+                <td>Structured execution with adaptive management</td>
+                <td>Rigid execution following initial plan</td>
+              </tr>
+              <tr>
+                <td>Quality Assurance</td>
+                <td>Continuous QA throughout project lifecycle</td>
+                <td>QA limited to final phase</td>
+              </tr>
+              <tr>
+                <td>Communication</td>
+                <td>Regular status updates and transparent reporting</td>
+                <td>Sporadic communication and updates</td>
+              </tr>
+              <tr>
+                <td>Support</td>
+                <td>Ongoing support and optimization services</td>
+                <td>Limited support after handover</td>
+              </tr>
+              <tr>
+                <td>Result</td>
+                <td>Exceeds expectations with sustained value</td>
+                <td>Meets minimum requirements</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Timeline Visual -->
+    <section class="process-timeline-visual">
+      <div class="container">
+        <div class="section-header">
+          <h2>Typical Project Timeline</h2>
+          <p>Understanding project phases and duration expectations</p>
+        </div>
+        <div class="timeline-visual">
+          <div class="timeline-bar">
+            <div class="timeline-segment" style="flex: 1; background: #ff8c42">
+              <span>Analysis<br />1-2 weeks</span>
+            </div>
+            <div
+              class="timeline-segment"
+              style="flex: 1.5; background: #2563eb"
+            >
+              <span>Planning<br />2-4 weeks</span>
+            </div>
+            <div class="timeline-segment" style="flex: 3; background: #10b981">
+              <span>Execution<br />Weeks to Months</span>
+            </div>
+            <div class="timeline-segment" style="flex: 1; background: #8b5cf6">
+              <span>Testing<br />1-3 weeks</span>
+            </div>
+            <div
+              class="timeline-segment"
+              style="flex: 1.5; background: #f59e0b"
+            >
+              <span>Delivery & Support<br />Ongoing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Success Factors -->
+    <section class="success-factors">
+      <div class="container">
+        <div class="section-header">
+          <h2>Key Success Factors</h2>
+          <p>What ensures successful project delivery</p>
+        </div>
+        <div class="factors-grid">
+          <div class="factor-card">
+            <div class="factor-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h4>Strong Partnership</h4>
+            <p>
+              Close collaboration and open communication with clients throughout
+              the project lifecycle.
+            </p>
+          </div>
+          <div class="factor-card">
+            <div class="factor-icon">
+              <i class="fas fa-people-carry"></i>
+            </div>
+            <h4>Expert Team</h4>
+            <p>
+              Experienced professionals with diverse expertise and domain
+              knowledge dedicated to your project.
+            </p>
+          </div>
+          <div class="factor-card">
+            <div class="factor-icon">
+              <i class="fas fa-compass"></i>
+            </div>
+            <h4>Clear Direction</h4>
+            <p>
+              Well-defined objectives, scope, and success metrics established
+              from the beginning.
+            </p>
+          </div>
+          <div class="factor-card">
+            <div class="factor-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h4>Adaptive Management</h4>
+            <p>
+              Flexibility to adjust strategies based on evolving requirements
+              while maintaining project integrity.
+            </p>
+          </div>
+          <div class="factor-card">
+            <div class="factor-icon">
+              <i class="fas fa-microscope"></i>
+            </div>
+            <h4>Rigorous Quality</h4>
+            <p>
+              Continuous quality assurance and testing ensuring deliverables
+              meet or exceed standards.
+            </p>
+          </div>
+          <div class="factor-card">
+            <div class="factor-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>Knowledge Transfer</h4>
+            <p>
+              Comprehensive training and documentation ensuring your team can
+              sustain the solution independently.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Implement with Our Process?</h2>
+        <p>
+          Experience a structured, proven approach to project success. Contact
+          us to discuss your requirements.
+        </p>
+        <a href="contact.html" class="btn btn-light">Start Your Project</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>TRIEDGE Industrial Solutions LLP</h4>
+            <p>Engineering Excellence. Industrial Precision.</p>
+            <div class="social-icons">
+              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">Industrial Consulting</a></li>
+              <li><a href="services.html">Engineering Solutions</a></li>
+              <li><a href="services.html">Equipment Maintenance</a></li>
+              <li><a href="services.html">Automation Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h5>Contact Info</h5>
+            <p><i class="fas fa-map-marker-alt"></i> India</p>
+            <p><i class="fas fa-phone"></i> +91 (XXX) XXX-XXXX</p>
+            <p><i class="fas fa-envelope"></i> info@triedge.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 TRIEDGE Industrial Solutions LLP. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
