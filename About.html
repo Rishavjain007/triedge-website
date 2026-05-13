@@ -1,696 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Learn about TRIEDGE Industrial Solutions - Our vision, mission, values, and commitment to industrial excellence."
-    />
-    <meta
-      name="keywords"
-      content="About TRIEDGE, Company Values, Industrial Excellence, Engineering Expertise"
-    />
-    <title>About TRIEDGE Industrial Solutions</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      /* ================= ABOUT PAGE PREMIUM ================= */
 
-      /* ===== PAGE HEADER ===== */
-      .page-header {
-        padding: 120px 0 80px;
-        text-align: center;
-        color: #fff;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About TRIEDGE - Where Logistics Meets Material Innovation" />
+  <title>TRIEDGE | About Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-      .page-header h1 {
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 1.2;
-      }
-
-      .page-header p {
-        margin-top: 10px;
-        font-size: 16px;
-        opacity: 0.9;
-      }
-
-      /* ===== COMPANY OVERVIEW ===== */
-      .company-overview {
-        padding: 100px 0;
-      }
-
-      .overview-grid {
-        display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: 50px;
-        align-items: center;
-      }
-
-      .overview-content h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-
-      .overview-content p {
-        margin-bottom: 15px;
-        color: #aaa;
-        line-height: 1.7;
-      }
-
-      .overview-image img {
-        width: 100%;
-        border-radius: 14px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      }
-
-      /* ===== VISION MISSION ===== */
-      .vision-mission {
-        padding: 100px 0;
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .vm-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-      }
-
-      .vm-card {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 35px;
-        border-radius: 14px;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        transition: 0.3s;
-      }
-
-      .vm-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-      }
-
-      .vm-icon {
-        font-size: 28px;
-        color: #ff7a00;
-        margin-bottom: 15px;
-      }
-
-      /* ===== CORE VALUES ===== */
-      .core-values {
-        padding: 100px 0;
-      }
-
-      .section-header {
-        text-align: center;
-        margin-bottom: 50px;
-      }
-
-      .section-header h2 {
-        font-size: 36px;
-      }
-
-      .section-header p {
-        color: #aaa;
-        margin-top: 10px;
-      }
-
-      .values-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-      }
-
-      .value-card {
-        background: rgba(255, 255, 255, 0.04);
-        padding: 25px;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        transition: 0.3s;
-      }
-
-      .value-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-      }
-
-      .value-icon {
-        font-size: 22px;
-        color: #ff7a00;
-        margin-bottom: 10px;
-      }
-
-      /* ===== PHILOSOPHY ===== */
-      .company-philosophy {
-        padding: 100px 0;
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .philosophy-grid {
-        display: grid;
-        grid-template-columns: 0.8fr 1.2fr;
-        gap: 50px;
-        align-items: center;
-      }
-
-      .philosophy-image img {
-        width: 100%;
-        border-radius: 14px;
-      }
-
-      .philosophy-content h2 {
-        font-size: 34px;
-        margin-bottom: 20px;
-      }
-
-      .philosophy-content p {
-        margin-bottom: 15px;
-        color: #aaa;
-      }
-
-      .philosophy-list {
-        margin-top: 20px;
-      }
-
-      .philosophy-list li {
-        margin-bottom: 10px;
-      }
-
-      .philosophy-list i {
-        color: #ff7a00;
-        margin-right: 8px;
-      }
-
-      /* ===== TIMELINE ===== */
-      .growth-presence {
-        padding: 100px 0;
-      }
-
-      .growth-timeline {
-        position: relative;
-        margin-top: 50px;
-        padding-left: 30px;
-        border-left: 2px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .timeline-item {
-        margin-bottom: 40px;
-        position: relative;
-      }
-
-      .timeline-marker {
-        position: absolute;
-        left: -10px;
-        top: 5px;
-        width: 16px;
-        height: 16px;
-        background: #ff7a00;
-        border-radius: 50%;
-      }
-
-      .timeline-content h4 {
-        margin-bottom: 5px;
-      }
-
-      .timeline-content p {
-        color: #aaa;
-      }
-
-      /* ===== TEAM ===== */
-      .team-expertise {
-        padding: 100px 0;
-        background: rgba(255, 255, 255, 0.03);
-      }
-
-      .expertise-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-      }
-
-      .expertise-card {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 25px;
-        border-radius: 12px;
-        text-align: center;
-        transition: 0.3s;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .expertise-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-      }
-
-      .expertise-icon {
-        font-size: 26px;
-        color: #ff7a00;
-        margin-bottom: 10px;
-      }
-
-      /* ===== CTA ===== */
-      .cta-section {
-        padding: 100px 0;
-        text-align: center;
-        background: linear-gradient(135deg, #ff7a00, #ff5500);
-        color: white;
-      }
-
-      .cta-section h2 {
-        font-size: 36px;
-      }
-
-      .cta-section p {
-        margin-top: 10px;
-      }
-
-      /* ===== RESPONSIVE ===== */
-      @media (max-width: 900px) {
-        .overview-grid,
-        .philosophy-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .page-header h1 {
-          font-size: 32px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <i class="fas fa-cogs"></i>
-          <span>TRIEDGE</span>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/images/logo.jpeg" alt="TRIEDGE Logo" class="logo-img"
+          onerror="this.src='https://via.placeholder.com/50x50?text=T'">
+        <div class="logo-text">
+          <span class="logo-main">TRIEDGE</span>
+          <span class="logo-sub">Industrial Solutions</span>
         </div>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <h1>About TRIEDGE</h1>
+      <p>Where Logistics Meets Material Innovation</p>
+    </div>
+  </section>
+
+  <section class="about-main">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>About TRIEDGE – Where Logistics Meets Material Innovation</h2>
+          <p>TRIEDGE was founded to solve a unique industry challenge: how to manufacture advanced nano materials while
+            ensuring their safe, efficient transport worldwide. Today, we operate two integrated divisions – Transport &
+            Logistics and Advanced Materials Manufacturing – under one roof.</p>
+          <p>Our transport division handles road freight across Europe and sea freight to global destinations, including
+            temperature‑controlled options for sensitive nano powders. Our manufacturing facility produces high‑purity
+            nano zinc oxide, nano silver oxide, nano silica, and proprietary antibacterial/antiviral blends.</p>
         </div>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link active">About</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="industries.html" class="nav-link">Industries</a></li>
-          <li><a href="process.html" class="nav-link">Process</a></li>
-          <li><a href="why-triedge.html" class="nav-link">Why Triedge</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80"
+            alt="TRIEDGE Manufacturing Facility">
+        </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Page Header -->
-    <section
-      class="page-header"
-      style="
-        background:
-          linear-gradient(rgba(15, 35, 70, 0.7), rgba(15, 35, 70, 0.7)),
-          url(&quot;https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&quot;);
-        background-size: cover;
-      "
-    >
-      <div class="container">
-        <h1>About TRIEDGE Industrial Solutions</h1>
-        <p>Our Journey, Values, and Commitment to Excellence</p>
+  <section class="industries-we-serve">
+    <div class="container">
+      <div class="section-header">
+        <h2>Industries We Serve</h2>
+        <p>Specialized solutions for diverse sectors</p>
       </div>
-    </section>
+      <div class="industries-grid">
+        <div class="industry-item">
+          <i class="fas fa-palette"></i>
+          <h3>Cosmetic Industry</h3>
+          <p>UV filters, antimicrobial additives, and high-performance ingredients</p>
+        </div>
+        <div class="industry-item">
+          <i class="fas fa-capsules"></i>
+          <h3>Pharmaceutical Industry</h3>
+          <p>Drug delivery systems, wound care, and medical applications</p>
+        </div>
+        <div class="industry-item">
+          <i class="fas fa-fire"></i>
+          <h3>Ceramic Industry</h3>
+          <p>Reinforcement, glazes, and CMP slurries</p>
+        </div>
+        <div class="industry-item">
+          <i class="fas fa-tshirt"></i>
+          <h3>Industrial Coatings & Textiles</h3>
+          <p>Antiviral and antibacterial finishes for enhanced protection</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Company Overview Section -->
-    <section class="company-overview">
-      <div class="container">
-        <div class="overview-grid">
-          <div class="overview-content">
-            <h2>Who We Are</h2>
-            <p>
-              TRIEDGE Industrial Solutions LLP is a leading provider of
-              comprehensive industrial and engineering solutions, dedicated to
-              helping businesses optimize their operations and achieve
-              sustainable growth.
-            </p>
-            <p>
-              Founded with a vision to bridge the gap between cutting-edge
-              technology and practical industrial applications, we have
-              established ourselves as a trusted partner for manufacturing,
-              heavy industries, infrastructure, and energy sectors across India.
-            </p>
-            <p>
-              Our multidisciplinary team of engineers, consultants, and
-              technical experts brings together diverse expertise to deliver
-              customized solutions that address the unique challenges of modern
-              industrial enterprises.
-            </p>
+  <section class="commitment-section">
+    <div class="container">
+      <div class="commitment-box">
+        <h2>Our Commitment to Excellence</h2>
+        <div class="commitment-grid">
+          <div class="commitment-item">
+            <i class="fas fa-leaf"></i>
+            <h4>Sustainable Logistics</h4>
+            <p>Carbon-efficient routing and eco-friendly practices</p>
           </div>
-          <div class="overview-image">
-            <img
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80"
-              alt="TRIEDGE Operations"
-            />
+          <div class="commitment-item">
+            <i class="fas fa-flask"></i>
+            <h4>R&D-Backed Synthesis</h4>
+            <p>20-100nm nanoparticles with tailored surface treatment</p>
+          </div>
+          <div class="commitment-item">
+            <i class="fas fa-chart-line"></i>
+            <h4>Strict Quality Control</h4>
+            <p>Particle size, purity, and dispersion stability testing</p>
+          </div>
+          <div class="commitment-item">
+            <i class="fas fa-boxes"></i>
+            <h4>End-to-End Supply Chain</h4>
+            <p>From our lab to your production line</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Vision & Mission Section -->
-    <section class="vision-mission">
-      <div class="container">
-        <div class="vm-grid">
-          <div class="vm-card">
-            <div class="vm-icon">
-              <i class="fas fa-eye"></i>
-            </div>
-            <h3>Our Vision</h3>
-            <p>
-              To be the most trusted and innovative industrial solutions
-              provider, recognized for delivering excellence, reliability, and
-              sustainable value to our clients and stakeholders.
-            </p>
-          </div>
-          <div class="vm-card">
-            <div class="vm-icon">
-              <i class="fas fa-bullseye"></i>
-            </div>
-            <h3>Our Mission</h3>
-            <p>
-              To empower industrial enterprises with advanced engineering
-              solutions, expert consulting services, and technological
-              innovations that enhance operational efficiency and drive business
-              growth.
-            </p>
-          </div>
-        </div>
+  <section class="closing-section">
+    <div class="container">
+      <div class="closing-quote">
+        <i class="fas fa-quote-left"></i>
+        <p>We don't just move or make materials. We engineer reliability at every step.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Core Values Section -->
-    <section class="core-values">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Core Values</h2>
-          <p>
-            Principles that guide our work and define our commitment to
-            excellence
-          </p>
-        </div>
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <h3>Excellence</h3>
-            <p>
-              We pursue the highest standards in every project, ensuring
-              superior quality and outstanding results that exceed expectations.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-handshake"></i>
-            </div>
-            <h3>Integrity</h3>
-            <p>
-              We operate with transparency, honesty, and ethical practices,
-              building trust through reliable and responsible business conduct.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3>Innovation</h3>
-            <p>
-              We embrace continuous improvement and creative thinking to develop
-              forward-thinking solutions for evolving industrial challenges.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <h3>Collaboration</h3>
-            <p>
-              We believe in the power of teamwork and partnership, working
-              closely with clients to achieve mutual success.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3>Reliability</h3>
-            <p>
-              We are committed to delivering consistent, dependable service and
-              solutions that clients can count on.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-leaf"></i>
-            </div>
-            <h3>Sustainability</h3>
-            <p>
-              We prioritize environmentally responsible practices and
-              sustainable solutions for long-term industrial development.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Company Philosophy Section -->
-    <section class="company-philosophy">
-      <div class="container">
-        <div class="philosophy-grid">
-          <div class="philosophy-image">
-            <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&q=80"
-              alt="TRIEDGE Philosophy"
-            />
-          </div>
-          <div class="philosophy-content">
-            <h2>Our Philosophy</h2>
-            <p>
-              At TRIEDGE, we believe that industrial success is built on a
-              foundation of technical expertise, innovative thinking, and
-              genuine partnerships with our clients.
-            </p>
-            <p>
-              We approach each project with a deep understanding that every
-              industrial challenge is unique. Rather than offering
-              one-size-fits-all solutions, we invest time in understanding your
-              specific needs, constraints, and objectives.
-            </p>
-            <p>
-              Our commitment goes beyond project delivery. We see ourselves as
-              long-term partners invested in your success, providing ongoing
-              support, guidance, and optimization recommendations to ensure
-              sustained value creation.
-            </p>
-            <h4>Our Approach:</h4>
-            <ul class="philosophy-list">
-              <li>
-                <i class="fas fa-check"></i> Client-centric problem solving
-              </li>
-              <li><i class="fas fa-check"></i> Data-driven decision making</li>
-              <li>
-                <i class="fas fa-check"></i> Continuous learning and adaptation
-              </li>
-              <li><i class="fas fa-check"></i> Quality at every stage</li>
-              <li><i class="fas fa-check"></i> Transparent communication</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Growth & Presence Section -->
-    <section class="growth-presence">
-      <div class="container">
-        <div class="section-header">
-          <h2>Growth & Industry Presence</h2>
-          <p>
-            Our trajectory of success and expanding reach across multiple
-            sectors
-          </p>
-        </div>
-        <div class="growth-timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>2010 - Inception</h4>
-              <p>
-                Founded with a vision to provide comprehensive industrial
-                consulting and engineering solutions to Indian industries.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>2014 - Expansion</h4>
-              <p>
-                Expanded service offerings and established presence in multiple
-                industrial sectors including manufacturing and energy.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>2018 - Recognition</h4>
-              <p>
-                Recognized as a leading industrial solutions provider,
-                completing over 300 successful projects with client satisfaction
-                rates above 95%.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>2023 - Innovation</h4>
-              <p>
-                Introduced advanced automation and digital solutions,
-                integrating IoT and AI technologies into our service portfolio.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h4>2026 - Present</h4>
-              <p>
-                Serving 100+ clients across manufacturing, heavy industries,
-                infrastructure, energy, and engineering sectors with over 500
-                completed projects.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Expertise Section -->
-    <section class="team-expertise">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Expert Team</h2>
-          <p>Skilled professionals dedicated to delivering excellence</p>
-        </div>
-        <div class="expertise-grid">
-          <div class="expertise-card">
-            <div class="expertise-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Certified Engineers</h3>
-            <p>
-              Our team comprises certified mechanical, electrical, and civil
-              engineers with extensive industry experience.
-            </p>
-          </div>
-          <div class="expertise-card">
-            <div class="expertise-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3>Industry Consultants</h3>
-            <p>
-              Experienced consultants providing strategic advice on process
-              optimization and operational efficiency.
-            </p>
-          </div>
-          <div class="expertise-card">
-            <div class="expertise-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Technical Specialists</h3>
-            <p>
-              Experts in automation, control systems, and advanced industrial
-              technologies.
-            </p>
-          </div>
-          <div class="expertise-card">
-            <div class="expertise-icon">
-              <i class="fas fa-project-diagram"></i>
-            </div>
-            <h3>Project Managers</h3>
-            <p>
-              Dedicated professionals ensuring timely project delivery with
-              quality assurance at every milestone.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <h2>Let's Partner for Your Industrial Success</h2>
-        <p>
-          Discover how TRIEDGE can help optimize your operations and drive
-          sustainable growth.
-        </p>
-        <a href="contact.html" class="btn btn-light">Contact Our Team</a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="assets/images/logo.jpeg" alt="TRIEDGE Logo" class="footer-logo-img"
+              onerror="this.src='https://via.placeholder.com/40x40?text=T'">
             <h4>TRIEDGE Industrial Solutions LLP</h4>
-            <p>Engineering Excellence. Industrial Precision.</p>
-            <div class="social-icons">
-              <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
           </div>
-          <div class="footer-section">
-            <h5>Quick Links</h5>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h5>Services</h5>
-            <ul>
-              <li><a href="services.html">Industrial Consulting</a></li>
-              <li><a href="services.html">Engineering Solutions</a></li>
-              <li><a href="services.html">Equipment Maintenance</a></li>
-              <li><a href="services.html">Automation Support</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h5>Contact Info</h5>
-            <p><i class="fas fa-map-marker-alt"></i> India</p>
-            <p><i class="fas fa-phone"></i> +91 (XXX) XXX-XXXX</p>
-            <p><i class="fas fa-envelope"></i> info@triedge.com</p>
+          <p>Global Transport & Advanced Nano Materials – One Trusted Partner</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; 2026 TRIEDGE Industrial Solutions LLP. All rights reserved.
-          </p>
+        <div class="footer-section">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Our Products</h5>
+          <ul>
+            <li><a href="products.html">Nano Zinc Oxide</a></li>
+            <li><a href="products.html">Nano Silver Oxide</a></li>
+            <li><a href="products.html">Nano Silica</a></li>
+            <li><a href="products.html">Antibacterial Blends</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt"></i> Industrial Area, India</p>
+          <p><i class="fas fa-phone"></i> +91 (XXX) XXX-XXXX</p>
+          <p><i class="fas fa-envelope"></i> info@triedge.com</p>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TRIEDGE Industrial Solutions LLP. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/script.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
