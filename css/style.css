@@ -582,7 +582,7 @@ p {
 }
 
 .commitment-item h4 {
-  color: var(--white);
+  color: var(--primary-dark);
 }
 
 .commitment-item p {
@@ -610,6 +610,301 @@ p {
   font-size: 1.5rem;
   font-style: italic;
   color: var(--primary-dark);
+}
+
+/* ===========================
+   FOUNDERS SECTION
+=========================== */
+
+.founders-section {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.founder-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: 0.3s;
+}
+
+.founder-card:hover {
+  transform: translateY(-10px);
+}
+
+.founder-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.founder-card h3 {
+  margin-top: 1.5rem;
+  color: var(--primary-dark);
+}
+
+.founder-card span {
+  display: inline-block;
+  color: var(--accent-orange);
+  font-weight: 600;
+  margin: 0.5rem 0 1rem;
+}
+
+.founder-card p {
+  padding: 0 1.5rem 2rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-card img {
+    height: 300px;
+  }
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero-content {
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h2 {
+  color: var(--accent-orange);
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* ===========================
+   JOURNEY POINTS
+=========================== */
+
+.journey-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.point-card {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: var(--shadow-md);
+  transition: 0.3s;
+}
+
+.point-card:hover {
+  transform: translateY(-8px);
+}
+
+.point-card i {
+  font-size: 2.5rem;
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services-section {
+  padding: 5rem 0;
+  background: var(--cream-bg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+}
+
+.service-card ul {
+  margin-top: 1rem;
+  padding-left: 20px;
+}
+
+.service-card li {
+  margin-bottom: 0.8rem;
+}
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery-section {
+  padding: 5rem 0;
+}
+
+.nano-section {
+  background: var(--cream-bg);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   VISION & MISSION
+=========================== */
+
+.vision-mission-section {
+  padding: 5rem 0;
+}
+
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.vision-card,
+.mission-card {
+  padding: 3rem;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.vision-card {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: white;
+}
+
+.mission-card {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+}
+
+.vision-card i,
+.mission-card i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.vision-card h2,
+.mission-card h2 {
+  color: var(--cream-bg);
+  margin-bottom: 1rem;
+}
+
+.vision-card p,
+.mission-card p {
+  color: var(--cream-bg);
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   CTA SECTION
+=========================== */
+
+.cta-section {
+  padding: 5rem 0;
+  background: var(--primary-dark);
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 14px 30px;
+  background: var(--accent-orange);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .founder-grid,
+  .services-grid,
+  .vision-mission-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey-points {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-logo {
+    width: 90px;
+  }
+
+  .service-card,
+  .vision-card,
+  .mission-card,
+  .point-card {
+    padding: 1.5rem;
+  }
 }
 
 /* Products Page */
