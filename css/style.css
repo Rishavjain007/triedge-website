@@ -65,6 +65,9 @@ p {
   color: var(--gray-mid);
   margin-bottom: 1rem;
 }
+a{
+  text-decoration: none;
+}
 
 /* Buttons */
 .btn {
